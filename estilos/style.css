@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-fade: linear-gradient(to bottom, rgb(10, 60, 130), rgb(10, 40, 80));
+    --background-form: rgba(0, 0, 0, 0.2);
+    --backgorund-button: #40E54C;
+    --text-button: #050505;
+    --error-text: #F00;
+    --success-text: #0F0;
+}
+
+html,
+body,
+input,
+form,
+button {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 500;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.signup-login {
+    height: 100vh;
+    background-image: var(--background-fade);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.title-signup-login {
+    font-weight: 800;
+    font-size: 28px;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.background-signup-login {
+    background: var(--background-form);
+    padding: 5% 10%;
+    border-radius: 20px;
+    border: #FFF 2px solid;
+}
+
+.background-signup-login form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    max-width: 500px;
+}
+
+.input-content {
+    width: 100%;
+}
+
+.form-input {
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    color: #FFF;
+    background: #050505;
+    padding: 1em 1.5em;
+    width: 100%;
+}
+
+.form-input::placeholder {
+    opacity: .8;
+}
+
+.input-content:nth-child(n+3) {
+    width: calc(50% - .5em);
+}
+
+.background-signup-login form input:focus {
+    outline: none;
+}
+
+.submit {
+    background: var(--backgorund-button);
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 28px;
+    width: 100%;
+    padding: .4em 0;
+    color: var(--text-button);
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.input-error {
+    color: var(--error-text);
+}
