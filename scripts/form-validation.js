@@ -6,13 +6,21 @@ const loginForm = document.getElementById("loginForm");
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 const passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/;
 const nameRegex = /^[a-záàâãéèêíïóôõöúçñ]+$/i;
-const user = new Object();
 
+class User {
+    constructor(firstname, email, password) {
+      this.firstName = firstname;
+      this.email = email;
+      this.password = password
+    }
+  }
 
 signupForm.addEventListener("submit", function(e) {
     
     if (signNameValidate() && signEmailValidate() && signPasswordValidate() && signConfirmpasswordValidate()) {
         signupForm.submit();
+        //const user = new User();
+
     } else {
         e.preventDefault();
         signNameValidate();
@@ -100,6 +108,7 @@ function signConfirmpasswordValidate() {
         return true;
     }
 }
+
 
 //  LOGIN FORM VALIDATION
 
