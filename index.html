@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/form-signin-login.css">
     <link rel="stylesheet" href="estilos/style.css">
-    <title>Code Heaven</title>
+    <title>Code Heaven | Cadastre-se</title>
 </head>
 <body>
 
@@ -15,27 +16,27 @@
             <form action="login.html" method="post" class="signin-login" id="signupForm">
 
                 <div class="input-content">
-                    <input type="text" name="name" placeholder="Nome" class="form-input required" id="inputName" onfocusout="nameValidate()">
+                    <input type="text" name="name" placeholder="Nome" class="form-input required" id="inputName" onfocusout="signNameValidate()">
                     <div class="input-error"></div>
                 </div>
 
                 <div class="input-content">
-                    <input type="email" name="email" placeholder="E-mail" class="form-input required" id="inputEmail" onfocusout="emailValidate()">
+                    <input type="email" name="email" placeholder="E-mail" class="form-input required" id="inputEmail" onfocusout="signEmailValidate()">
                     <div class="input-error"></div>
                 </div>
 
                 <div class="input-content">
-                    <input type="password" name="password" placeholder="Senha" class="form-input required" id="inputPassword" onfocusout="passwordValidate()">
+                    <input type="password" name="password" placeholder="Senha" class="form-input required" id="inputPassword" onfocusout="signPasswordValidate()">
                     <div class="input-error"></div>
                 </div>
 
                 <div class="input-content">
-                    <input type="password" name="confirm-password" placeholder="Confirmar Senha" class="form-input required" id="inputConfirmpassowrd" onfocusout="confirmpasswordValidate()">
+                    <input type="password" name="confirm-password" placeholder="Confirmar Senha" class="form-input required" id="inputConfirmpassowrd" onfocusout="signConfirmpasswordValidate()">
                     <div class="input-error"></div>
                 </div>
 
                 <span class="login-text">
-                    Já possui uma conta? <a href="login.html">Entrar</a>
+                    Já possui uma conta? <a href="paginas/login.html">Entrar</a>
                 </span>
                 <button id="submit" class="submit" type="submit">Cadastrar</button>
             </form>

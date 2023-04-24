@@ -1,30 +1,31 @@
 const submitButton = document.querySelector('#submit');
 const errorMessage = document.getElementsByClassName("input-error");
 const allInput = document.getElementsByClassName("required");
-const form = document.getElementById("signupForm");
+const signupForm = document.getElementById("signupForm");
+const loginForm = document.getElementById("loginForm");
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 const passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/;
 const nameRegex = /^[a-záàâãéèêíïóôõöúçñ]+$/i;
+const user = new Object();
 
 
-
-form.addEventListener("submit", function(e) {
+signupForm.addEventListener("submit", function(e) {
     
-    if (nameValidate() && emailValidate() && passwordValidate() && confirmpasswordValidate()) {
-        form.submit();
+    if (signNameValidate() && signEmailValidate() && signPasswordValidate() && signConfirmpasswordValidate()) {
+        signupForm.submit();
     } else {
         e.preventDefault();
-        nameValidate();
-        emailValidate();
-        passwordValidate();
-        confirmpasswordValidate();
+        signNameValidate();
+        signEmailValidate();
+        signPasswordValidate();
+        signConfirmpasswordValidate();
     }
 
 })
 
+//  SIGN UP FORM VALIDATION
 
-
-function nameValidate() {
+function signNameValidate() {
 
     nome = allInput[0].value.split(' ').join('');
     nameBoolean = nome.match(nameRegex);
@@ -38,7 +39,7 @@ function nameValidate() {
             return true;
         }
     } else if (nome == "") {
-        errorMessage[0].innerText = "Preencha este campo";
+        errorMessage[0].innerText = "Preencha com seu nome";
         return false;
     } else {
         errorMessage[0].innerText = "Digite somente letras";
@@ -49,7 +50,7 @@ function nameValidate() {
 
 
 
-function emailValidate() {
+function signEmailValidate() {
 
     email = allInput[1].value;
 
@@ -57,10 +58,10 @@ function emailValidate() {
         errorMessage[1].innerText = "";
         return true;
     } else if (email == "") {
-        errorMessage[1].innerText = "Preencha este campo";
+        errorMessage[1].innerText = "Preencha com seu e-mail";
         return false;
     } else {
-        errorMessage[1].innerText = "Digite o email corretamente";
+        errorMessage[1].innerText = "Digite o e-mail corretamente";
         return false;
     }
 
@@ -68,14 +69,14 @@ function emailValidate() {
 
 
 
-function passwordValidate() {
+function signPasswordValidate() {
     password = allInput[2].value;
 
     if (password.length >= 8) {
         errorMessage[2].innerText = "";
         return true;
     } else if (password == "") {
-        errorMessage[2].innerText = "Preencha este campo";
+        errorMessage[2].innerText = "Preencha com sua senha";
         return false;
     } else {
         errorMessage[2].innerText = "Sua senha deve conter no mínimo 8 caracteres"
@@ -85,11 +86,11 @@ function passwordValidate() {
 
 
 
-function confirmpasswordValidate() {
+function signConfirmpasswordValidate() {
     confirmpassowrd = allInput[3].value;
 
     if (confirmpassowrd == "") {
-        errorMessage[3].innerText = "Preencha este campo";
+        errorMessage[3].innerText = "Preencha com sua senha";
         return false;
     } else if (confirmpassowrd != password) {
         errorMessage[3].innerText = "Digite a mesma senha";
@@ -97,5 +98,55 @@ function confirmpasswordValidate() {
     } else {
         errorMessage[3].innerText = "";
         return true;
+    }
+}
+
+//  LOGIN FORM VALIDATION
+
+loginForm.addEventListener("submit", function(e) {
+    
+    if (loginEmailValidate() && loginPasswordValidate()) {
+        signupForm.submit();
+    } else {
+        e.preventDefault();
+        loginEmailValidate();
+        loginPasswordValidate();
+    }
+
+})
+
+
+
+function loginEmailValidate() {
+
+    email = allInput[0].value;
+
+    if (emailRegex.test(email)) {
+        errorMessage[0].innerText = "";
+        return true;
+    } else if (email == "") {
+        errorMessage[0].innerText = "Preencha com seu e-mail";
+        return false;
+    } else {
+        errorMessage[0].innerText = "Digite o e-mail corretamente";
+        return false;
+    }
+
+}
+
+
+
+function loginPasswordValidate() {
+    password = allInput[1].value;
+
+    if (password.length >= 8) {
+        errorMessage[1].innerText = "";
+        return true;
+    } else if (password == "") {
+        errorMessage[1].innerText = "Preencha com sua senha";
+        return false;
+    } else {
+        errorMessage[1].innerText = "Sua senha deve conter no mínimo 8 caracteres"
+        return false;
     }
 }

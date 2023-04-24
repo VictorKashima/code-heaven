@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/form-signin-login.css">
+    <link rel="stylesheet" href="/estilos/style.css">
+    <title>Code Heaven | Login</title>
+</head>
+<body>
+
+    <section class="signup-login">
+        <div class="background-signup-login">
+            <h1 class="title-signup-login">Login</h1>
+            <form action="login.html" method="post" class="signin-login" id="loginForm">
+
+                <div class="input-content">
+                    <input type="email" name="email" placeholder="E-mail" class="form-input required" id="inputEmail" onfocusout="loginEmailValidate()">
+                    <div class="input-error"></div>
+                </div>
+
+                <div class="input-content">
+                    <input type="password" name="password" placeholder="Senha" class="form-input required" id="inputPassword" onfocusout="loginPasswordValidate()">
+                    <div class="input-error"></div>
+                </div>
+
+                <span class="login-text">
+                    Não possui uma conta? <a href="/index.html">Cadastrar-se</a>
+                </span>
+                <button id="submit" class="submit" type="submit">Acessar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="/scripts/form-validation.js"></script>
+</body>
+</html>
