@@ -16,9 +16,9 @@
 
 .background-signup-login {
     background: var(--background-form);
-    padding: 5% 10%;
     border-radius: 20px;
     border: #FFF 2px solid;
+    width: min-content(10px, 100%, 500px);
 }
 
 .background-signup-login form {
