@@ -15,10 +15,15 @@
 }
 
 .background-signup-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: var(--background-form);
     border-radius: 20px;
     border: #FFF 2px solid;
-    width: min-content(10px, 100%, 500px);
+    height: min(100% - 20px, 500px);
+    width: min(100vw - 20px, 1000px);
+    margin-inline: auto;
 }
 
 .background-signup-login form {
@@ -26,7 +31,8 @@
     flex-wrap: wrap;
     gap: 1em;
     justify-content: space-between;
-    max-width: 500px;
+    width: min(100% - 30px, 500px);
+    margin-inline: auto;
 }
 
 .input-content {
