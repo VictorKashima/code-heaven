@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(0deg, rgba(10, 60, 130, 0.8), rgba(10, 40, 80, 0.9)), url(../imagens/code-heaven-home-background02.jpg);
+}
+
+.index-nav-bar {
+    top: 0;
+    width: min(100vw - 15px, 80%);
+    margin-inline: auto;
+    position: absolute;
+    display: flex;
+}
+
+.index-nav-bar img {
+    width: 150px;
+}
