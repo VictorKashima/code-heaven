@@ -8,12 +8,22 @@ body {
 
 .index-nav-bar {
     top: 0;
+    position: fixed;
     width: min(100vw - 15px, 80%);
     margin-inline: auto;
-    position: absolute;
     display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .index-nav-bar img {
-    width: 150px;
+    width: 120px;
+}
+
+.links {
+    margin: 0 auto;
+}
+
+.button {
+    border: 1px solid aqua;
 }
