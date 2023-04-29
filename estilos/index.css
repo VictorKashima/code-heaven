@@ -5,13 +5,15 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: left;
     align-items: center;
     background:linear-gradient(0deg, rgba(10, 60, 130, 0.8), rgba(10, 40, 80, 0.9)), url(../imagens/code-heaven-home-background02.jpg);
+    background-position: center;
     width: min(100vw - 15px, 80%);
     margin-inline: auto;
+    font-size: 14px;
 }
 
 .index-nav-bar {
@@ -23,6 +25,8 @@ body {
     justify-content: left;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 1rem;
 }
 
 .index-nav-bar img {
@@ -35,8 +39,8 @@ body {
 
 .button {
     border: 2px solid var(--border-color);
-    padding: .5em 2em;
-    border-radius: 10em;
+    padding: .5rem 2rem;
+    border-radius: 10rem;
 }
 
 .signup {
@@ -45,7 +49,7 @@ body {
 }
 
 .text {
-    width: min(100vw - 15px, 50%);
+    width: min(100vw - 15px, 60%);
 }
 
 h1 {
@@ -55,4 +59,23 @@ h1 {
 p {
     font-size: 1.2rem;
     font-weight: 100;
+}
+
+@media screen and (max-width: 960px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    .index-nav-bar img {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .text {
+        width: 100%;
+    }
 }
