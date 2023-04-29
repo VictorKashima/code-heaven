@@ -6,14 +6,6 @@ const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 const passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/;
 const nameRegex = /^[a-záàâãéèêíïóôõöúçñ]+$/i;
 
-class User {
-    constructor(firstname, email, password) {
-      this.firstName = firstname;
-      this.email = email;
-      this.password = password
-    }
-  }
-
 loginForm.addEventListener("submit", function(e) {
     
     if (loginEmailValidate() && loginPasswordValidate()) {
@@ -32,7 +24,7 @@ function loginEmailValidate() {
 
     email = allInput[0].value;
 
-    if (emailRegex.test(email)) {
+    if (emailRegex.test(email) && email == User.email) {
         errorMessage[0].innerText = "";
         return true;
     } else if (email == "") {
@@ -50,7 +42,7 @@ function loginEmailValidate() {
 function loginPasswordValidate() {
     password = allInput[1].value;
 
-    if (password.length >= 8) {
+    if (password.length >= 8 && password == User.password) {
         errorMessage[1].innerText = "";
         return true;
     } else if (password == "") {

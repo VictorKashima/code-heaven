@@ -14,7 +14,7 @@
     <section class="signup-login">
         <div class="background-signup-login">
             <h1 class="title-signup-login">Login</h1>
-            <form action="login.html" method="post" class="signin-login" id="loginForm">
+            <form action="contents.html" method="get" class="signin-login" id="loginForm">
 
                 <div class="input-content">
                     <input type="email" name="email" placeholder="E-mail" class="form-input required" id="inputEmail" onfocusout="loginEmailValidate()">
@@ -27,13 +27,13 @@
                 </div>
 
                 <span class="login-text">
-                    Não possui uma conta? <a href="/index.html">Cadastrar-se</a>
+                    Não possui uma conta? <a href="signup.html">Cadastrar-se</a>
                 </span>
                 <button id="submit" class="submit" type="submit">Acessar</button>
             </form>
         </div>
     </section>
 
-    <script src="/scripts/login-form-validation.js"></script>
+    <script src="../scripts/login-form-validation.js"></script>
 </body>
 </html>

@@ -17,10 +17,9 @@ class User {
 signupForm.addEventListener("submit", function(e) {
     
     if (signNameValidate() && signEmailValidate() && signPasswordValidate() && signConfirmpasswordValidate()) {
-        signupForm.submit();
         const user = new User(nome, email, password);
         console.log(user);
-
+        signupForm.submit();
     } else {
         e.preventDefault();
         signNameValidate();
