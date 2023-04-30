@@ -24,7 +24,7 @@ function loginEmailValidate() {
 
     email = allInput[0].value;
 
-    if (emailRegex.test(email) && email == User.email) {
+    if (emailRegex.test(email)) {
         errorMessage[0].innerText = "";
         return true;
     } else if (email == "") {

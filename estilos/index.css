@@ -13,7 +13,6 @@ body {
     background-position: center;
     width: min(100vw - 15px, 80%);
     margin-inline: auto;
-    font-size: 14px;
 }
 
 .index-nav-bar {

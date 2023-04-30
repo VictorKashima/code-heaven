@@ -6,19 +6,9 @@ const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 const passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/;
 const nameRegex = /^[a-záàâãéèêíïóôõöúçñ]+$/i;
 
-class User {
-    constructor(firstname, email, password) {
-      this.firstName = firstname;
-      this.email = email;
-      this.password = password
-    }
-  }
-
 signupForm.addEventListener("submit", function(e) {
     
     if (signNameValidate() && signEmailValidate() && signPasswordValidate() && signConfirmpasswordValidate()) {
-        const user = new User(nome, email, password);
-        console.log(user);
         signupForm.submit();
     } else {
         e.preventDefault();
