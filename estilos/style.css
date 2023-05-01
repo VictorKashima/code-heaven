@@ -8,6 +8,7 @@
 
 :root {
     --background-fade: linear-gradient(to bottom, rgb(10, 60, 130), rgb(10, 40, 80));
+    --dark-blue-fade: linear-gradient(to bottom, rgb(5, 15, 25), rgb(0, 10, 20));
     --background-form: rgba(0, 0, 0, 0.2);
     --backgorund-button: #40E54C;
     --text-button: #050505;
@@ -23,7 +24,7 @@ input,
 form,
 button {
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     color: #FFF;
     font-weight: 500;
 }
@@ -31,10 +32,18 @@ button {
 body {
     background-image: var(--background-fade);
     min-height: 100vh;
+    width: min(100vw - 15px, 90%);
+    margin-inline: auto;
 }
 
 a {
     color: #FFF;
     text-decoration: none;
     font-weight: 800;
+}
+
+.top-nav-bar {
+    background: #000;
+    height: 10px;
+    width: 100vw;
 }
