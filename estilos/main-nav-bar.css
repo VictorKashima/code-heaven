@@ -1,18 +1,12 @@
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-
 .main-nav-bar {
-    position: absolute;
     width: min(100vw - 15px, 90%);
     margin-inline: auto;
-    top: 20px;
     display: flex;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    height: fit-content;
+    margin: 20px auto;
 }
 
 .main-nav-bar img {
@@ -41,15 +35,14 @@ body {
 }
 
 .dropdown {
+    background: rgb(10, 60, 130);
     display: none;
-    flex-direction: column;
     gap: .7rem;
+    flex-direction: column;
     list-style: none;
+    padding: 1rem;
     position: absolute;
-    padding-top: 1rem;
     white-space: nowrap;
-    text-align: right;
-    right: 0;
 }
 
 .dropdown:hover {
