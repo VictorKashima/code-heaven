@@ -47,6 +47,7 @@ h2 {
 .top-nav-bar-background {
     background-image: var(--dark-blue-fade);
     padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 .top-nav-bar {
@@ -76,4 +77,17 @@ span {
 
 .top-nav-bar > a > i {
     font-size: 1.5rem;
+}
+
+.contents {
+    width: min(100vw - 15px, 90%);
+    margin-inline: auto;
+}
+
+.card-01 {
+    display: grid;
+    grid-template-columns: 1fr 5fr repeat(2, 1fr);
+    background: #FFF;
+    color: var(--text-button);
+    align-items: center;
 }
