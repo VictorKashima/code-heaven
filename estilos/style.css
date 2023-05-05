@@ -59,8 +59,8 @@ h2 {
 }
 
 .top-nav-bar h2,
-a,
-span {
+.top-nav-bar a,
+.top-nav-bar span {
     font-weight: 600;
 }
 
