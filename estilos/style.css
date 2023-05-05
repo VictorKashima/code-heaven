@@ -16,6 +16,9 @@
     --success-text: #0F0;
     --border-color: #0FF;
     --icon-color: #EEE;
+    --card-color-01: #FA6400;
+    --card-color-02: #BB00FF;
+    --card-color-03: #00CFDC;
 }
 
 html,
@@ -35,8 +38,12 @@ body {
 }
 
 a {
-    color: #FFF;
     text-decoration: none;
+    color: #FFF;
+}
+
+.login-text a,
+.main-nav-bar {
     font-weight: 800;
 }
 
@@ -84,10 +91,27 @@ h2 {
     margin-inline: auto;
 }
 
-.card-01 {
+.card {
     display: grid;
     grid-template-columns: 1fr 5fr repeat(2, 1fr);
+    grid-template-areas: "icon text questions answers";
     background: #FFF;
     color: var(--text-button);
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.card h2,
+.card i {
+    text-align: center;
+}
+
+.card i {
+    font-size: 2rem;
+    grid-area: icon;
+    background: var(--card-color-01);
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 15px 0;
 }
