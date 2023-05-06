@@ -99,6 +99,9 @@ h2 {
     color: var(--text-button);
     grid-template-rows: auto;
     gap: 15px;
+    align-items: center;
+    min-height: 150px;
+    border-radius: 10px;
 }
 
 .card h2,
@@ -113,5 +116,4 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 0;
 }
