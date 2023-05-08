@@ -19,6 +19,9 @@
     --card-color-01: #FA6400;
     --card-color-02: #BB00FF;
     --card-color-03: #00CFDC;
+    --card-color-04: #E6E63C;
+    --card-color-05: #E646C8;
+    --card-color-06: #CC9952;
 }
 
 html,
@@ -89,6 +92,10 @@ h2 {
 .contents {
     width: min(100vw - 15px, 90%);
     margin-inline: auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding-bottom: 30px;
 }
 
 .card {
@@ -99,9 +106,9 @@ h2 {
     color: var(--text-button);
     grid-template-rows: auto;
     gap: 15px;
-    align-items: center;
     min-height: 150px;
     border-radius: 10px;
+    align-items: center;
 }
 
 .card h2,
@@ -110,10 +117,36 @@ h2 {
 }
 
 .card i {
-    font-size: 2rem;
     grid-area: icon;
-    background: var(--card-color-01);
+    font-size: 3rem;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    color: #FFF;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+.one i {
+    background: var(--card-color-01);
+}
+
+.two i {
+    background: var(--card-color-02);
+}
+
+.three i {
+    background: var(--card-color-03);
+}
+
+.four i {
+    background: var(--card-color-04);
+}
+
+.five i {
+    background: var(--card-color-05);
+}
+
+.six i {
+    background: var(--card-color-06);
 }
