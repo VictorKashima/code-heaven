@@ -100,14 +100,15 @@ h2 {
 
 .card {
     display: grid;
-    grid-template-columns: 1fr 5fr repeat(2, 1fr);
+    grid-template-columns: 150px 5fr repeat(2, 1fr);
     grid-template-areas: "icon text questions answers";
     background: #FFF;
     color: var(--text-button);
     grid-template-rows: auto;
     gap: 15px;
-    min-height: 150px;
-    border-radius: 10px;
+    min-height: 200px;
+    border-radius: 8px;
+    border: 2px solid #000;
     align-items: center;
 }
 
@@ -118,13 +119,25 @@ h2 {
 
 .card i {
     grid-area: icon;
-    font-size: 3rem;
-    border-radius: 10px 0 0 10px;
+    font-size: 3.5rem;
+    border-radius: 8px 0 0 8px;
     height: 100%;
     color: #FFF;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card > h2 {
+    border-left: 2px solid #000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-info {
+    justify-self: flex-start;
 }
 
 .one i {
