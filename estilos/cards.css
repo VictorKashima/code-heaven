@@ -1,0 +1,93 @@
+.contents,
+.questions {
+    width: min(100vw - 15px, 90%);
+    margin-inline: auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: minmax(auto, 150px) 5fr repeat(2, 1fr);
+    grid-template-areas: "icon text questions answers";
+    background: #FFF;
+    color: var(--text-button);
+    min-height: 200px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    align-items: center;
+}
+
+.card > h2 {
+    text-align: center;
+    padding: 0 1em;
+}
+
+.card i {
+    grid-area: icon;
+    font-size: 3.5rem;
+    border-radius: 6px 0 0 6px;
+    height: 100%;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card > h2 {
+    border-left: 2px solid #000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-info {
+    grid-area: text;
+    align-self: flex-start;
+    padding: 1.5rem;
+}
+
+.card-info > h2 {
+    padding-bottom: 1.2rem;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2em;
+}
+
+.category {
+    background: var(--dark-blue-fade);
+    color: #FFF;
+    font-weight: 600;
+    padding: .5em 1.2em;
+    border-radius: 5px;
+}
+
+.one i {
+    background: var(--card-color-01);
+}
+
+.two i {
+    background: var(--card-color-02);
+}
+
+.three i {
+    background: var(--card-color-03);
+}
+
+.four i {
+    background: var(--card-color-04);
+}
+
+.five i {
+    background: var(--card-color-05);
+}
+
+.six i {
+    background: var(--card-color-06);
+}

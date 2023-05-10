@@ -1,0 +1,44 @@
+.login-text a,
+.main-nav-bar {
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+.top-nav-bar-background {
+    background-image: var(--dark-blue-fade);
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.top-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: min(100vw - 15px, 90%);
+    margin-inline: auto;
+    gap: 1rem;
+}
+
+.top-nav-bar h2,
+.top-nav-bar a,
+.top-nav-bar span {
+    font-weight: 600;
+}
+
+.top-nav-bar > a {
+    background: var(--backgorund-button);
+    padding: .5rem 1.6rem;
+    color: var(--text-button);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 auto;
+}
+
+.top-nav-bar > a > i {
+    font-size: 1.5rem;
+}
