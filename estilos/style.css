@@ -104,16 +104,13 @@ h2 {
     grid-template-areas: "icon text questions answers";
     background: #FFF;
     color: var(--text-button);
-    grid-template-rows: auto;
-    gap: 15px;
     min-height: 200px;
     border-radius: 8px;
     border: 2px solid #000;
     align-items: center;
 }
 
-.card h2,
-.card i {
+.card > h2 {
     text-align: center;
 }
 
@@ -137,7 +134,21 @@ h2 {
 }
 
 .card-info {
-    justify-self: flex-start;
+    grid-area: text;
+    align-self: flex-start;
+    padding: 1.5rem;
+}
+
+.card-info > h2 {
+    padding-bottom: 1rem;
+}
+
+.category {
+    background: var(--dark-blue-fade);
+    color: #FFF;
+    font-weight: 600;
+    padding: .5em 1.2em;
+    border-radius: 5px;
 }
 
 .one i {
