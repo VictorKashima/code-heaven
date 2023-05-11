@@ -9,9 +9,16 @@
     <link rel="stylesheet" href="../../estilos/top-nav-bar.css">
     <link rel="stylesheet" href="../../estilos/cards.css">
     <link rel="icon" type="image/x-icon" href="../../imagens/code-heaven-fav-icon.png">
-    <title>Code Heaven | Conteudos</title>
+    <title>Code Heaven | Perguntas</title>
+
+    <style>
+        .card {
+            grid-template-columns: minmax(auto, 150px) 5fr 1fr;
+        }
+    </style>
 </head>
 <body>
+
     <nav class="main-nav-bar">
         <a href="/"><img src="../../imagens/code-heaven-logo.png" alt="Code Heaven"></a>
         <div class="search">
@@ -37,16 +44,15 @@
             <h2>FÓRUM</h2>
             <span>></span>
             <h2><a href="contents.html">Conteúdos</a></h2>
-            <span>></span>
             <h2><a href="#">Perguntas</a></h2>
-            <a href="new-question.html">
-                <i class="fa-solid fa-comments"></i>
-                <h2>Nova Pergunta</h2>
-            </a>
+                <a href="new-question.html">
+                    <i class="fa-solid fa-comments"></i>
+                    <h2>Nova Pergunta</h2>
+                </a>
         </div>
     </nav>
 
-    <section class="questions">
+    <section class="contents">
 
 
         <a href="contents-questions.html">
@@ -62,8 +68,12 @@
                         <span class="category">Lorem</span>
                         <span class="category">Lorem</span>
                     </div>
+                    <div class="card-user">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Por</span>
+                        <p class="user-name">User name</p>
+                    </div>
                 </div>
-                <h2>0 <br>Perguntas</h2>
                 <h2>0 <br>Respostas</h2>
             </div>
         </a>
@@ -80,8 +90,12 @@
                         <span class="category">Lorem</span>
                         <span class="category">Lorem</span>
                     </div>
+                    <div class="card-user">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Por</span>
+                        <p class="user-name">User name</p>
+                    </div>
                 </div>
-                <h2>0 <br>Perguntas</h2>
                 <h2>0 <br>Respostas</h2>
             </div>
         </a>
@@ -97,8 +111,12 @@
                         <span class="category">Lorem</span>
                         <span class="category">Lorem</span>
                     </div>
+                    <div class="card-user">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Por</span>
+                        <p class="user-name">User name</p>
+                    </div>
                 </div>
-                <h2>0 <br>Perguntas</h2>
                 <h2>0 <br>Respostas</h2>
             </div>
         </a>
@@ -114,8 +132,12 @@
                         <span class="category">Lorem</span>
                         <span class="category">Lorem</span>
                     </div>
+                    <div class="card-user">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Por</span>
+                        <p class="user-name">User name</p>
+                    </div>
                 </div>
-                <h2>0 <br>Perguntas</h2>
                 <h2>0 <br>Respostas</h2>
             </div>
         </a>
@@ -129,8 +151,12 @@
                         <span class="category">Lorem</span>
                         <span class="category">Lorem</span>
                     </div>
+                    <div class="card-user">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Por</span>
+                        <p class="user-name">User name</p>
+                    </div>
                 </div>
-                <h2>0 <br>Perguntas</h2>
                 <h2>0 <br>Respostas</h2>
             </div>
         </a>
@@ -143,15 +169,18 @@
                     <div class="categories">
                         <span class="category">Lorem</span>
                     </div>
+                    <div class="card-user">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Por</span>
+                        <p class="user-name">User name</p>
+                    </div>
                 </div>
-                <h2>0 <br>Perguntas</h2>
                 <h2>0 <br>Respostas</h2>
             </div>
         </a>
 
-        
-    </section>
 
+    </section>
 
     <script src="https://kit.fontawesome.com/a350e5ffff.js" crossorigin="anonymous"></script>
 </body>
