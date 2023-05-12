@@ -73,6 +73,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.2em;
+    font-size: .9rem;
 }
 
 .category {
@@ -82,6 +83,10 @@
     padding: .5em 1.2em;
     border-radius: 5px;
     height: fit-content;
+}
+
+.category:hover {
+    cursor: help;
 }
 
 .one > i {

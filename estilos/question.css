@@ -1,13 +1,12 @@
 .question-template {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     width: var(--site-util-width);
     margin-inline: auto;
 }
 
 .responses > h2 {
     text-align: center;
-    font-size: 1.8rem;
 }
 
 .question {

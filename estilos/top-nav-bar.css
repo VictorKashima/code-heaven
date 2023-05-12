@@ -3,10 +3,6 @@
     font-weight: 800;
 }
 
-h2 {
-    font-size: 1.3rem;
-}
-
 .top-nav-bar-background {
     background-image: var(--dark-blue-fade);
     padding: 20px 0;
@@ -28,7 +24,7 @@ h2 {
     font-weight: 600;
 }
 
-.top-nav-bar > a {
+.button {
     background: var(--backgorund-button);
     padding: .5rem 1.6rem;
     color: var(--text-button);
@@ -37,6 +33,7 @@ h2 {
     align-items: center;
     gap: 10px;
     margin: 0 0 0 auto;
+    font-weight: bold;
 }
 
 .top-nav-bar > a > i {
