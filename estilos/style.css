@@ -10,6 +10,7 @@
     --background-fade: linear-gradient(to bottom, rgb(10, 60, 130), rgb(10, 40, 80));
     --dark-blue-fade: linear-gradient(to bottom, rgb(5, 15, 25), rgb(0, 10, 20));
     --background-form: rgba(0, 0, 0, 0.2);
+    --background-card: #FEF;
     --backgorund-button: #40E54C;
     --text-button: #050505;
     --error-text: #F00;
@@ -22,6 +23,8 @@
     --card-color-04: #E6E63C;
     --card-color-05: #E646C8;
     --card-color-06: #CC9952;
+
+    --site-util-width: min(100vw - 15px, 90%);
 }
 
 html,
@@ -33,6 +36,11 @@ button {
     font-size: 1rem;
     color: #FFF;
     font-weight: 500;
+}
+
+input {
+    outline: none;
+    border: none;
 }
 
 body {

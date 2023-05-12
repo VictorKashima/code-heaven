@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../estilos/style.css">
+    <link rel="stylesheet" href="../../estilos/main-nav-bar.css">
+    <link rel="stylesheet" href="../../estilos/top-nav-bar.css">
+    <link rel="stylesheet" href="../../estilos/cards.css">
+    <link rel="stylesheet" href="../../estilos/question.css">
+    <link rel="icon" type="image/x-icon" href="../../imagens/code-heaven-fav-icon.png">
+    <title>Code Heaven | Perguntas de um conteúdo</title>
+</head>
+<body>
+
+    <nav class="main-nav-bar">
+        <a href="/"><img src="../../imagens/code-heaven-logo.png" alt="Code Heaven"></a>
+        <div class="search">
+            <input type="text" class="wonder" placeholder="Qual sua dúvida?">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a href="contents.html">CONTEÚDOS</a>
+        <a href="questions.html">PERGUNTAS</a>
+        <a href="ranking.html">RANKING</a>
+        <div class="user">
+            <a href="paginas/login.html" >Usuário</a>
+            <ul class="dropdown">
+                <li><a href="perfil.html">MEU PERFIL</a></li>
+                <li><a href="admin.html">ADMIN</a></li>
+                <li><a href="chat.html">CHAT</a></li>
+                <li><a href="../login.html">SAIR</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="top-nav-bar-background">
+        <div class="top-nav-bar">
+            <h2>FÓRUM</h2>
+            <span>></span>
+            <h2><a href="contents.html">Conteúdos</a></h2>
+            <span>></span>
+            <h2><a href="javascript:javascript:history.go(-1)">Perguntas</a></h2>
+            <span>></span>
+            <h2><a href="#">A pergunta</a></h2>
+
+            <a href="new-question.html">
+                <i class="fa-solid fa-comments"></i>
+                <h2>Nova Pergunta</h2>
+            </a>
+        </div>
+    </nav>
+
+    <section class="question-template">
+        <div class="responses">
+            <h2>0</h2>
+            <h2>Respostas</h2>
+        </div>
+
+        <div class="vl"></div>
+
+        <div class="question">
+            <div class="user-question">
+                <i class="fa-solid fa-user"></i>
+                <h2>Por</h2>
+                <h2>Usuário</h2>
+            </div>
+            <div class="categories">
+                <span class="category">Lorem</span>
+                <span class="category">Lorem</span>
+                <span class="category">Lorem</span>
+                <span class="category">Lorem</span>
+                <span class="category">Lorem</span>
+                <span class="category">Lorem</span>
+            </div>
+            <p class="question-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <hr>
+            <div class="response">
+                <h2>O que você acha disso?</h2>
+                <input type="text" name="response">
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://kit.fontawesome.com/a350e5ffff.js" crossorigin="anonymous"></script>
+</body>
+</html>

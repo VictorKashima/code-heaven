@@ -1,6 +1,6 @@
 .contents,
 .questions {
-    width: min(100vw - 15px, 90%);
+    width: var(--site-util-width);
     margin-inline: auto;
     display: flex;
     gap: 30px;
@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: minmax(auto, 150px) 5fr repeat(2, 1fr);
     grid-template-areas: "icon text questions answers";
-    background: #FEF;
+    background: var(--background-card);
     color: var(--text-button);
     min-height: 200px;
     border-radius: 8px;

@@ -79,3 +79,7 @@
 .input-error {
     color: var(--error-text);
 }
+
+.login-text > a {
+    font-weight: bold;
+}

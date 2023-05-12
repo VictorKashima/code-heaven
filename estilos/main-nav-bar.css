@@ -1,5 +1,5 @@
 .main-nav-bar {
-    width: min(100vw - 15px, 90%);
+    width: var(--site-util-width);
     margin-inline: auto;
     display: flex;
     align-items: center;
