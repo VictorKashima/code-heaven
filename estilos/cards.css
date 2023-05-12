@@ -89,6 +89,14 @@
     cursor: help;
 }
 
+.category > i {
+    background: #FFF;
+    color: #000;
+    border-radius: 10rem;
+    padding: .2rem;
+    margin-left: .2rem;
+}
+
 .one > i {
     background: var(--card-color-01);
 }

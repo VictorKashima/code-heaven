@@ -38,9 +38,12 @@ button {
     font-weight: 500;
 }
 
-input {
+input,
+textarea {
     outline: none;
     border: none;
+    font-size: 1rem;
+    resize: none;
 }
 
 body {
