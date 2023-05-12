@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="../../estilos/top-nav-bar.css">
     <link rel="stylesheet" href="../../estilos/cards.css">
     <link rel="stylesheet" href="../../estilos/question.css">
+    <link rel="stylesheet" href="../../estilos/profile.css">
     <link rel="icon" type="image/x-icon" href="../../imagens/code-heaven-fav-icon.png">
-    <title>Code Heaven | Linux com horário diferente do Windows dual boot</title>
+    <title>Code Heaven | Nova pergunta</title>
 </head>
 <body>
 
@@ -38,11 +39,7 @@
         <div class="top-nav-bar">
             <h2>FÓRUM</h2>
             <span>></span>
-            <h2><a href="contents.html">Conteúdos</a></h2>
-            <span>></span>
-            <h2><a href="javascript:javascript:history.go(-1)">Perguntas</a></h2>
-            <span>></span>
-            <h2><a href="#">Linux com horário diferente do Windows dual boot</a></h2>
+            <h2><a href="#">Meu perfil</a></h2>
 
             <a href="new-question.html" class="button right">
                 <i class="fa-solid fa-comments"></i>
@@ -51,47 +48,55 @@
         </div>
     </nav>
 
-    <section class="question-template">
+    <section class="profile-template">
 
-
-        <div class="responses">
-            <h2>0</h2>
-            <h2>Respostas</h2>
-        </div>
-
-        <div class="vl"></div>
-
-        <div class="question">
-
-            <div class="user-question">
+        <div class="user-data">
+            <div class="user-image">
                 <i class="fa-solid fa-user"></i>
-                <h2>Por</h2>
-                <h2>Usuário</h2>
+                <h2>Dados gerais</h2>
             </div>
-            <h2>Linux com horário diferente do Windows dual boot</h2>
+            
+            <div class="name-email">
+                <div class="name">
+                    <h2>Nome completo</h2>
+                    <input type="text">
+                </div>
+                <div class="email">
+                    <h2>E-mail</h2>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="biography">
+                <h2>Biografia</h2>
+                <input type="text">
+            </div>
+            <div class="date-password">
+                <div class="date-of-birth">
+                    <h2>Data de nascimento</h2>
+                    <div>
+                        <input type="text">
+                        <span>/</span>
+                        <input type="text">
+                        <span>/</span>
+                        <input type="text">
+                    </div>  
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    Alterar senha
+                </div>
+            </div>
+        </div>
+        
+        <div class="user-interest">
+            <h2>Suas áreas de interesse</h2>
             <div class="categories">
                 <span class="category">Lorem</span>
                 <span class="category">Lorem</span>
                 <span class="category">Lorem</span>
-                <span class="category">Lorem</span>
-                <span class="category">Lorem</span>
-                <span class="category">Lorem</span>
             </div>
-            <p class="question-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <hr>
-            <div class="response">
-                <h2>O que você acha disso?</h2>
-                <input type="text" name="response">
-            </div>
-            <a href="#" class="button right">
-            <h2>Responder</h2>
-            </a>
-
+            <a href=javascript:javascript:history.go(-1)" class="button">Salvar</a>
         </div>
-
-
     </section>
 
     <script src="https://kit.fontawesome.com/a350e5ffff.js" crossorigin="anonymous"></script>

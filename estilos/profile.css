@@ -1,0 +1,33 @@
+.profile-template {
+    display: grid;
+    grid-template-columns: auto max-content;
+    width: var(--site-util-width);
+    margin-inline: auto;
+    column-gap: 1rem;
+}
+
+.user-interest {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.user-data {
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+}
+
+.user-image {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-image > i {
+    font-size: 3rem;
+    background: #000;
+    padding: 1rem;
+    border-radius: 10rem;
+}
