@@ -11,13 +11,13 @@ body {
     align-items: center;
     background:linear-gradient(0deg, rgba(10, 60, 130, 0.8), rgba(10, 40, 80, 0.9)), url(../imagens/code-heaven-home-background02.jpg);
     background-position: center;
-    width: min(100vw - 15px, 80%);
+    width: var(--site-util-width);
     margin-inline: auto;
 }
 
 .index-nav-bar {
     position: absolute;
-    width: min(100vw - 15px, 80%);
+    width: var(--site-util-width);
     margin-inline: auto;
     top: 20px;
     display: flex;
@@ -61,7 +61,7 @@ p {
 }
 
 footer {
-    width: min(100vw - 15px, 80%);
+    width: var(--site-util-width);
     margin-inline: auto;
     position: absolute;
     bottom: 50px;

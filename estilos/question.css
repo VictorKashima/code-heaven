@@ -82,18 +82,10 @@ hr {
     color: #000;
 }
 
-.input-question-title,
-.input-question-text {
-    padding: .8rem 1rem;
-    border-radius: 5px;
-    color: #000;
-}
-
-.input-question-title::placeholder,
-.input-question-text::placeholder {
-    color: #000;
-}
-
 .input-question-text {
     min-height: 30vh;
+}
+
+.input-response {
+    min-height: 10rem;
 }

@@ -24,12 +24,11 @@
     --card-color-05: #E646C8;
     --card-color-06: #CC9952;
 
-    --site-util-width: min(100vw - 15px, 90%);
+    --site-util-width: min(100vw - 15px, 85%);
 }
 
 html,
 body,
-input,
 form,
 button {
     font-family: 'Inter', sans-serif;
@@ -44,11 +43,15 @@ textarea {
     border: none;
     font-size: 1rem;
     resize: none;
+    padding: .8rem 1rem;
+    border-radius: 5px;
 }
 
 body {
     background-image: var(--background-fade);
     min-height: 100vh;
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
 }
 
 a {

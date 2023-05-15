@@ -26,6 +26,11 @@
     padding: .6rem 1rem;
 }
 
+.wonder {
+    color: #FFF;
+    padding: 0;
+}
+
 .main-nav-bar input::placeholder {
     color: #BBB;
 }
