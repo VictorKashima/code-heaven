@@ -10,21 +10,19 @@
 
 .card {
     display: grid;
-    grid-template-columns: minmax(auto, 150px) 5fr repeat(2, 1fr);
+    grid-template-columns: calc(8vw + 20px) auto repeat(2, min-content);
     grid-template-areas: "icon text questions answers";
     background: var(--background-card);
     color: var(--text-button);
-    min-height: 200px;
+    min-height: 220px;
     border-radius: 8px;
     border: 2px solid #000;
-    align-items: center;
 }
 
 .card > i {
     grid-area: icon;
     font-size: 3.5rem;
     border-radius: 6px 0 0 6px;
-    height: 100%;
     color: #FFF;
     display: flex;
     align-items: center;
@@ -47,7 +45,7 @@
     padding: 1.5rem 1rem;
     gap: 1rem;
     display: grid;
-    grid-template-rows: 1.5rem auto 1.5rem;
+    grid-template-rows: min-content auto min-content;
     height: 100%;
 }
 
@@ -58,10 +56,8 @@
 }
 
 .card-user > i {
-    font-size: 1.5rem;
-    background: #000;
-    color: #FFF;
-    padding: .6em;
+    font-size: 3rem;
+    color: #000;
     border-radius: 100px;
 }
 
@@ -72,7 +68,8 @@
 .categories {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.2em;
+    gap: 1em;
+    align-content: flex-start;
     font-size: .9rem;
 }
 
@@ -82,7 +79,6 @@
     font-weight: 600;
     padding: .5em 1.2em;
     border-radius: 5px;
-    height: fit-content;
 }
 
 .category:hover {
@@ -90,11 +86,7 @@
 }
 
 .category > i {
-    background: #FFF;
-    color: #000;
-    border-radius: 10rem;
-    padding: .2rem;
-    margin-left: .2rem;
+    font-size: 1.2rem;
 }
 
 .one > i {

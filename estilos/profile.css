@@ -4,15 +4,7 @@
     align-items: center;
     width: var(--site-util-width);
     margin-inline: auto;
-    gap: 10%;
-}
-
-.user-data {
-    height: max-content;
-}
-
-.user-data > div {
-    height: min-content;
+    gap: 5vw;
 }
 
 .user-data > div:nth-child(n+2):nth-child(-n+5) {
@@ -53,10 +45,7 @@
 }
 
 .user-image > i {
-    font-size: 3rem;
-    background: #000;
-    padding: 1rem;
-    border-radius: 10rem;
+    font-size: 6rem;
 }
 
 .name {
@@ -85,10 +74,7 @@
 
 .change-password {
     grid-area: password;
-}
-
-.change-password > input {
-    width: fit-content;
+    align-self: center;
 }
 
 .user-interest {
@@ -108,7 +94,8 @@
     font-size: 1.5rem;
 }
 
-input {
+input,
+textarea {
     background: none;
     border: 1px solid #FFF;
     color: #FFF;

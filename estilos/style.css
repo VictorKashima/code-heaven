@@ -50,8 +50,6 @@ textarea {
 body {
     background-image: var(--background-fade);
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: max-content max-content max-content;
 }
 
 a {
@@ -61,4 +59,8 @@ a {
 
 h2 {
     font-size: 1.3rem;
+}
+
+.hidden {
+    visibility: hidden;
 }

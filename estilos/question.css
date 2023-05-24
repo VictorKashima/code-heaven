@@ -35,10 +35,7 @@
 
 .user-question > i,
 .user-new-question > i {
-    font-size: 3rem;
-    background: #000;
-    padding: 1.5rem;
-    border-radius: 10rem;
+    font-size: 6rem;
 }
 
 .response {
@@ -62,7 +59,6 @@ hr {
 
 .input-categories {
     margin: 0 0 0 auto;
-    width: 50%;
 }
 
 .input-categories > div {

@@ -1,0 +1,23 @@
+.ranking-section {
+    width: var(--site-util-width);
+    margin-inline: auto;
+}
+
+.ranking-nav-bar {
+    background: var(--backgorund-button);
+    display: flex;
+    color: #000;
+    padding: 2.5rem 1.5rem;
+    border-radius: 5px;
+    gap: 3rem;
+}
+
+.ranking-nav-bar h3:nth-child(2),
+.ranking-nav-bar h3:nth-child(3) {
+    font-weight: 500;
+}
+
+.ranking-user {
+    display: grid;
+    grid-template-columns: 100px auto repeat(3, min-content);
+}
