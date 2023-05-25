@@ -58,30 +58,3 @@
     display: flex;
 }
 
-@media screen and (max-width: 1100px) {
-
-    html {
-        font-size: 12px;
-    }
-
-    .main-nav-bar img {
-        width: 100px;
-    }
-
-    .main-nav-bar input {
-        width: 150px;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    html {
-        font-size: 10px;
-    }
-
-    .main-nav-bar img {
-        width: 90px;
-    }
-
-}

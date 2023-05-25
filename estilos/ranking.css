@@ -10,6 +10,7 @@
     padding: 2.5rem 1.5rem;
     border-radius: 5px;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .ranking-nav-bar h3:nth-child(2),
@@ -17,7 +18,41 @@
     font-weight: 500;
 }
 
+.ranking {
+    margin: 30px 0;
+}
+
 .ranking-user {
     display: grid;
-    grid-template-columns: 100px auto repeat(3, min-content);
+    grid-template-columns: calc(5vw + 20px) auto repeat(3, min-content);
+    grid-auto-flow: row;
+    min-height: 150px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    column-gap: 1.5rem;
+}
+
+.ranking-user > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.medal,
+.counter {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user {
+    gap: 1rem;
+}
+
+.ranking-user i {
+    font-size: 4rem;
+}
+
+.medal {
+    background: var(--ranking-background);
+    color: #000;
 }

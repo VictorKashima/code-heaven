@@ -23,22 +23,21 @@
     --card-color-04: #E6E63C;
     --card-color-05: #E646C8;
     --card-color-06: #CC9952;
+    --ranking-background: #FFD700;
 
     --site-util-width: min(100vw - 15px, 85%);
 }
 
-html,
-body,
-form,
-button {
+html {
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     color: #FFF;
     font-weight: 500;
 }
 
 input,
-textarea {
+textarea,
+button {
     outline: none;
     border: none;
     font-size: 1rem;
@@ -63,4 +62,32 @@ h2 {
 
 .hidden {
     visibility: hidden;
+}
+
+@media screen and (max-width: 1100px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .main-nav-bar img {
+        width: 100px;
+    }
+
+    .main-nav-bar input {
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    .main-nav-bar img {
+        width: 90px;
+    }
+
 }
