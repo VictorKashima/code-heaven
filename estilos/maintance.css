@@ -1,0 +1,16 @@
+.maintenace {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.maintenace > img {
+    max-height: 60vh;
+}
+
+.maintenace > h1 {
+    font-size: 2rem;
+    text-align: center;
+}
