@@ -75,6 +75,7 @@
 .change-password {
     grid-area: password;
     align-self: center;
+    font-weight: bold;
 }
 
 .user-interest {
@@ -100,4 +101,14 @@ textarea {
     border: 1px solid #FFF;
     color: #FFF;
     width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .profile-template {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+
 }

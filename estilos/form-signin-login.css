@@ -71,3 +71,12 @@
 .login-text > a {
     font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+
+    .background-signup-login {
+        background: none;
+        border: none;
+    }
+
+}

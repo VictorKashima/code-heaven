@@ -25,7 +25,7 @@
     --card-color-06: #CC9952;
     --ranking-background: #FFD700;
 
-    --site-util-width: min(100vw - 15px, 85%);
+    --site-util-width: min(85%);
 }
 
 html {
@@ -74,13 +74,17 @@ h2 {
         width: 100px;
     }
 
-    .main-nav-bar input {
-        width: 150px;
+    :root {
+        --site-util-width: min(100vw - 50px, 1500px);
+    }
+
+    .search {
+        display: none;
     }
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 
     html {
         font-size: 10px;
@@ -88,6 +92,10 @@ h2 {
 
     .main-nav-bar img {
         width: 90px;
+    }
+    
+    :root {
+        --site-util-width: min(100vw - 20px, 1500px);
     }
 
 }

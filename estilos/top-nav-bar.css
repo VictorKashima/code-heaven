@@ -16,7 +16,7 @@
     width: var(--site-util-width);
     margin-inline: auto;
     gap: 1rem;
-    min-height: 50px;
+    min-height: 3rem;
 }
 
 .top-nav-bar h2,

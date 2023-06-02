@@ -3,18 +3,18 @@
     margin-inline: auto;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
     flex-wrap: wrap;
     height: fit-content;
     margin: 20px auto;
 }
 
 .main-nav-bar img {
-    width: 120px;
+    width: 8rem;
 }
 
-.main-nav-bar input {
-    width: 300px;
+.search input {
+    width: 200px;
     background: none;
     outline: none;
     border: none;
@@ -58,3 +58,10 @@
     display: flex;
 }
 
+@media screen and (max-width: 600px) {
+
+    .main-nav-bar {
+        gap: 1rem;
+    }
+
+}
