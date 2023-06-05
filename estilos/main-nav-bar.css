@@ -52,10 +52,12 @@
 
 .dropdown:hover {
     display: flex;
+    cursor: pointer;
 }
 
 .user > a:hover + .dropdown {
     display: flex;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {

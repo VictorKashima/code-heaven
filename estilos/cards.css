@@ -39,6 +39,14 @@
     padding: 0 1em;
 }
 
+.card > h2:nth-child(1) {
+    grid-area: questions;
+}
+
+.card > h2:nth-child(2) {
+    grid-area: answers;
+}
+
 .card-info {
     grid-area: text;
     align-self: flex-start;
@@ -111,4 +119,35 @@
 
 .six > i {
     background: var(--card-color-06);
+}
+
+@media screen and (max-width: 600px) {
+ 
+    .card {
+        grid-template-columns: none;
+        grid-template-areas:
+            "icon icon"
+            "text text"
+            "questions answers";
+        text-align: center;
+    }
+
+    .card > i {
+        border-radius: 6px 6px 0 0px;
+    }
+
+    .card-user {
+        justify-self: center;
+    }
+
+    .card > h2 {
+        border: none;
+        height: min-content;
+    }
+
+    .categories {
+        justify-content: center;
+        height: min-content;
+    }
+
 }
